@@ -1,0 +1,59 @@
+{
+  "name": "Timestamps From Logs",
+
+  "namespace": "Stanford\\TimestampsFromLogs",
+
+  "description": "Get timestamps from redcap_log_event",
+
+  "documentation": "README.md",
+
+  "authors": [
+    {
+      "name": "jae lee",
+      "email": "jael@stanford.edu",
+      "institution": "Stanford University"
+    }
+  ],
+
+  "permissions": [
+    ""
+  ],
+
+  "links": {
+    "project": [
+      {
+        "name": "Derive Timestamps from logs",
+        "icon": "report",
+        "url": "DeriveTimestamps.php"
+      }
+    ]
+  },
+  "crons": [
+  ],
+  "no-auth-pages": [
+    "public-page"
+  ],
+
+  "system-settings": [
+  ],
+  "project-settings": [
+    {
+      "key": "proxy-field",
+      "name": "Field from which to derive the timestamp",
+      "required":true,
+      "type": "field-list"
+    },
+    {
+      "key": "target-field",
+      "name": "Field in which to enter the timestamp",
+      "required":true,
+      "type": "field-list"
+    },
+    {
+      "key": "target-checkbox-field",
+      "name": "Checkbox field to check to indicate that timestamp is from log",
+      "required":false,
+      "type": "field-list"
+    }
+  ]
+}
